@@ -1,0 +1,11 @@
+
+
+label.answer{
+  background-color: #e4e8ee;
+  padding: 20px 30px;
+  width: 50%;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
