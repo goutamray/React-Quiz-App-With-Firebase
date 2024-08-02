@@ -15,3 +15,15 @@
   font-weight: 700;
   margin-top: 10px;
 }
+.bottom-part p a{
+  font-weight: 500;
+  font-size: 15px;
+}
+.error-message p{
+  color: red;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+
