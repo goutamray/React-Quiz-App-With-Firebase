@@ -5,6 +5,7 @@ import Answer from "../../components/answer/Answer";
 import MiniPlayer from "../../components/miniPlayer/MiniPlayer";
 import ProgressBar from "../../components/progressBar/ProgressBar";
 import "./Quiz.css"; 
+
 const Quiz = () => {
   return (
     <>
@@ -17,8 +18,8 @@ const Quiz = () => {
                   <h4>Question can have multiple answers</h4>
                   <div className="another-box">
                      <Answer />
-                     <ProgressBar />
-                     <MiniPlayer />
+                     <ProgressBar />  
+                     <MiniPlayer />    
                   </div>
                </div>
             </div>
