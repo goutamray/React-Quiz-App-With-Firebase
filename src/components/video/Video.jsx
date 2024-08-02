@@ -7,7 +7,7 @@ const Video = () => {
   return (
      <>
          <div className="single-video shadow">
-            <Link href="#">
+            <Link to="/Quiz">
               <div className="video">
                    <img src={photo} alt="" />
                    <p>#23 React Hooks Bangla - React useReducer hook Bangla</p>

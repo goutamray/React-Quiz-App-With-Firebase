@@ -22,9 +22,10 @@ const NavBar = () => {
                     <h3> Quiz App</h3>
                   </Link>  
               </div>
-              <div className="account">
-                  <span> <FaRegUserCircle />  </span>
-                  <Link to="/signUp"> Sign up </Link>
+              <div className="account">             
+                   <span> <FaRegUserCircle />  </span>
+                   <Link to="/signUp"> Sign Up </Link>
+                   <Link to="/signIn" style={{marginLeft : "10px"}}> Log In </Link>
               </div>
             </nav>
           </div>

@@ -100,17 +100,17 @@
     height: 40px;
   }
 
-  .next span:first-child {
+  /* .next span:first-child {
     display: none;
-  }
+  } */
 }
 
 .rangeArea {
   width: 100%;
   position: relative;
   margin: 0 auto;
+  top: -17px;
 }
-
 .rangeBody {
   width: 100%;
   height: 4px;

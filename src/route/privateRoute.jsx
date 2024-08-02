@@ -3,6 +3,7 @@ import Layout from "../components/Layout/Layout";
 // pages 
 import Home from "../pages/Home/Home";
 import Quiz from "../pages/quiz/Quiz";
+import Result from "../pages/result/Result";
 import SignIn from "../pages/signIn/SignIn";
 import SignUp from "../pages/signUp/SignUp";
 
@@ -28,6 +29,10 @@ export const privateRoute = [
       {
         path : "/quiz",
         element : <Quiz />,
+      },
+      {
+        path : "/result",
+        element : <Result />,
       },
         
       

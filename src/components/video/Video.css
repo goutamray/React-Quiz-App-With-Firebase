@@ -1,32 +1,23 @@
 
-.single-video{
+.single-video {
   width: 23%;
   padding: 10px;
 }
-
-.single-video a{
-   
-}
-
-.single-video a .video{
-
-}
-
 .single-video a .video img{
   width: 100%;
 }
-.single-video a .video p{
+ .single-video a .video p{
   color:  #002333;
   font-size: 16px;
   font-weight: 500;
   margin-top: 6px;
 }
-.single-video a .video .qmeta{
+ .single-video a .video .qmeta{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.single-video a .video .qmeta p{
+ .single-video a .video .qmeta p{
   font-size: 14px;
   font-weight: 400;
 }

@@ -2,13 +2,15 @@
 .main{
   padding: 40px 0px;
 }
-.all-video{
+.all-video-box {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-
+.all-video-box a{
+  width: 100%;
+}
 
 
 
