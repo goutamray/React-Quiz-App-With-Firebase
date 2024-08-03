@@ -15,13 +15,15 @@ import google from "../../assets/google.png";
 
 
 import "./SignUp.css"; 
-const SignUp = () => {
+
+const SignUp = ({ isLoggedIn, setIsLoggedIn }) => {
   const [input, setInput] = useState({
      name : "",
      email : "",
      password : "",
      confirmPass : "", 
   });
+  
   const [error, setError] = useState(""); 
 
   const navigate = useNavigate(); 
@@ -54,7 +56,7 @@ const SignUp = () => {
   }
  
   // sign up user 
-   await createUserWithEmailAndPassword(auth, input.email , input.password)
+ await createUserWithEmailAndPassword(auth, input.email , input.password)
         .then((userCredential) => {
            // Signed up 
            const user = userCredential.user;
@@ -78,15 +80,15 @@ const SignUp = () => {
         .catch((error) => {
             console.log(error);
         });
-  
-  }
+
+ }
 
 
   // google login 
   const handleGoogleLogin = async() => {
     const data = await signInWithPopup(auth, googleProvider);
-
     navigate("/"); 
+    setIsLoggedIn(data.user); 
   }
 
   return (

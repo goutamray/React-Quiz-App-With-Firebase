@@ -39,11 +39,11 @@ const SignIn = () => {
     }
 
     // sign In user 
-    await signInWithEmailAndPassword(auth, input.email , input.password)
+     await signInWithEmailAndPassword(auth, input.email , input.password)
         .then((userCredential) => {
             // Signed in 
             const user = userCredential.user;
-
+          
           // reset input data
           setInput({
             email : "",
@@ -56,7 +56,7 @@ const SignIn = () => {
         .catch((error) => {
           console.log(error);
       });
-
+     
     }
 
   return (
