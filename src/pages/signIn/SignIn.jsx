@@ -4,10 +4,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
 import { useState } from "react";
+import { auth } from "../../firebase/firebase";
 
 
 import "./SignIn.css"; 
-import { auth } from "../../firebase/firebase";
 
 const SignIn = () => {
     const [input, setInput] = useState({

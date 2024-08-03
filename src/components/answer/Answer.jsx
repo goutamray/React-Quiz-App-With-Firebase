@@ -7,6 +7,10 @@ const Answer = () => {
   return (
     <>
       <CheckBox />
+      <CheckBox />
+      <CheckBox />
+      <CheckBox />
+      <CheckBox />
     </>
   )
 }

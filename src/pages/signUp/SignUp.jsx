@@ -1,11 +1,17 @@
 
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { auth } from "../../firebase/firebase";
-import { createUserWithEmailAndPassword, updateProfile  } from "firebase/auth"; 
+import { auth, googleProvider } from "../../firebase/firebase";
+import { 
+  createUserWithEmailAndPassword, 
+  signInWithPopup, 
+  updateProfile  
+} from "firebase/auth"; 
 
 
+// images 
 import dev from "../../assets/dev.webp";
+import google from "../../assets/google.png"; 
 
 
 import "./SignUp.css"; 
@@ -73,8 +79,14 @@ const SignUp = () => {
             console.log(error);
         });
   
- 
+  }
 
+
+  // google login 
+  const handleGoogleLogin = async() => {
+    const data = await signInWithPopup(auth, googleProvider);
+
+    navigate("/"); 
   }
 
   return (
@@ -153,6 +165,12 @@ const SignUp = () => {
               </form>
               <div className="bottom-part text-center mt-4">
                 <p> Already have an account? <Link to="/signIn">  Login </Link> instead.</p>
+              </div>
+              <div>
+                <button onClick={handleGoogleLogin} className="google-button btn btn-sm w-100 ">
+                   <img src={google} alt="google" />
+                   Login With Google 
+                </button>
               </div>
             </div>
           </div>
