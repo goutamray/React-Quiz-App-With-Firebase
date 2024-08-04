@@ -1,19 +1,20 @@
 
 import { Link } from "react-router-dom";
-import photo from "../../assets/web.jpg"
+
 
 import "./Video.css"; 
-const Video = () => {
+const Video = ({ title, id, noq}) => {
+
   return (
      <>
          <div className="single-video shadow">
-            <Link to="/Quiz">
+            <Link to={`/quiz/${id}`}>
               <div className="video">
-                   <img src={photo} alt="" />
-                   <p>#23 React Hooks Bangla - React useReducer hook Bangla</p>
+                   <img src={`http://img.youtube.com/vi/${id}/maxresdefault.jpg`} alt={ title } />
+                   <p> { title } </p>
                 <div className="qmeta">
-                    <p>10 Questions</p>
-                    <p>Score : Not taken yet</p>
+                    <p> { noq } Questions </p>
+                    <p> Total points : {noq * 5}</p>
                 </div>
              </div>
            </Link>

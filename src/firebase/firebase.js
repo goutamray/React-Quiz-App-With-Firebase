@@ -9,6 +9,7 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 const firebaseConfig = {
   // apiKey: "AIzaSyCI8dtTY8PvhWZAvf_d4NRwCz0-7XtxCAY",
   // authDomain: "mern-apps-13484.firebaseapp.com",
+  // databaseURL: "https://mern-apps-13484-default-rtdb.asia-southeast1.firebasedatabase.app",
   // projectId: "mern-apps-13484",
   // storageBucket: "mern-apps-13484.appspot.com",
   // messagingSenderId: "61690263723",

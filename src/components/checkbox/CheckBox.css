@@ -3,10 +3,16 @@
 label.answer{
   background-color: #e4e8ee;
   padding: 20px 30px;
-  width: 50%;
+  width: 47%;
   display: flex;
   gap: 5px;
   align-items: center;
   margin-bottom: 5px !important;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
 }
+label.answer:hover{
+  background-color: #d3d3d3;
 
+}

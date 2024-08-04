@@ -41,7 +41,7 @@ function App() {
           <NavBar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}  />
               <Routes >
                   <Route  path='/' exact={true} element={ <Home /> }/>
-                  <Route  path='/quiz' exact={true} element={ <Quiz /> }/>  
+                  <Route  path='/quiz/:id' exact={true} element={ <Quiz /> }/>  
                   <Route  path='/result' exact={true} element={ <Result /> }/>  
 
                   <Route  path='/signIn' exact={true} element={ <SignIn /> } />

@@ -3,14 +3,18 @@
 import CheckBox from "../checkbox/CheckBox";
 
 import "./Answer.css"; 
-const Answer = () => {
+const Answer = ({ options = [], handleChange }) => {
   return (
     <>
-      <CheckBox />
-      <CheckBox />
-      <CheckBox />
-      <CheckBox />
-      <CheckBox />
+      <div className="answer-part">
+          {
+            options.map((option, index) => {
+              return  <CheckBox key={index} title={option.title} value={index} checked={option.checked} onchange={(e) => {
+                handleChange(e, index)
+              }}/>
+            })
+          }
+       </div>
     </>
   )
 }

@@ -23,7 +23,7 @@ const SignUp = ({ isLoggedIn, setIsLoggedIn }) => {
      password : "",
      confirmPass : "", 
   });
-  
+
   const [error, setError] = useState(""); 
 
   const navigate = useNavigate(); 
@@ -88,7 +88,7 @@ const SignUp = ({ isLoggedIn, setIsLoggedIn }) => {
   const handleGoogleLogin = async() => {
     const data = await signInWithPopup(auth, googleProvider);
     navigate("/"); 
-    setIsLoggedIn(data.user); 
+   
   }
 
   return (

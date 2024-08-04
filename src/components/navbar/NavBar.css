@@ -2,15 +2,18 @@
 .header{
   padding: 8px 0px;
   background-color: #fff;
+  position: sticky;
+  top:0px;
+  left: 0px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9;
 }
 .navBar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0%;
-  left: 0%;
-  width: 100%;
+
 }
 .navBar .logo-part a{
    display: flex;
