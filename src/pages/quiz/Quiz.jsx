@@ -62,7 +62,27 @@ const Quiz = () => {
   }
 
   // handle when users clicks the next button to get the next question 
+  const nextQuestion = () => {
+     if (currentQuestion + 1 < questions.length) {
+        setCurrentQuestion(prevCurrent => prevCurrent + 1 );
+     }
+  };
 
+  // handle when users clicks the prev button to get the previous question 
+  const prevQuestion = () => {
+     if (currentQuestion >= 1 && currentQuestion <= questions.length) {
+        setCurrentQuestion(prevCurrent => prevCurrent + 1 );
+     }
+  };
+
+  // submit quiz 
+  const submit = async() => {
+ 
+  }
+
+  // calculate percentense of progress 
+  const percentense = questions.length > 0 ? ((  currentQuestion + 1 ) / questions.length ) * 100 : 0 ; 
+ 
   return (
     <>
       <div className="quiz">
@@ -83,7 +103,13 @@ const Quiz = () => {
                       <h4>Question can have multiple answers</h4>
                     <div className="another-box">
                         <Answer options={qna[currentQuestion].options} handleChange={handleAnswerChange}/>
-                        <ProgressBar />  
+
+                        <ProgressBar 
+                            next = {nextQuestion} 
+                            prev = {prevQuestion}
+                            progress = {percentense}
+                          /> 
+
                         <MiniPlayer />    
                     </div>
                   </>

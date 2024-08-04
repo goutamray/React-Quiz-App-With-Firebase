@@ -81,6 +81,17 @@
   transform: translateY(-50%);
   cursor: pointer;
 }
+button.my-custom-btn {
+ padding: 6px 12px;
+ background-color: #00d01c;
+ border-radius: 4px;
+ border: none;
+ color: #fff !important;
+ font-size: 600;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
 
 .tooltip-custom {
   position: absolute;

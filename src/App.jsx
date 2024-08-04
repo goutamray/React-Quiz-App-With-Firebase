@@ -25,6 +25,7 @@ function App() {
     const authState =  onAuthStateChanged(auth, (user) => {
       if (user) {
         setIsLoggedIn(user); 
+        
       }else{
         console.log("No user Found");
       }
